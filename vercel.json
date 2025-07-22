@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "/create-transaction", "destination": "/api/index.js" },
+    { "source": "/midtrans-notification", "destination": "/api/index.js" },
+    { "source": "/send-contact-email", "destination": "/api/index.js" },
+    { "source": "/(.*)", "destination": "/api/index.js" }
+  ]
+}
