@@ -39,7 +39,7 @@ app.use(express.json());
 // --- KONFIGURASI MIDTRANS ---
 const snap = new midtransClient.Snap({
   // Atur isProduction berdasarkan NODE_ENV Vercel
-  isProduction: process.env.NODE_ENV === 'production',
+  isProduction:false,
   serverKey: process.env.MIDTRANS_SERVER_KEY,
   clientKey: process.env.MIDTRANS_CLIENT_KEY,
 });
